@@ -1,0 +1,161 @@
+/* General Reset */
+body,
+h1,
+ul,
+li,
+a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50px;
+    text-align: center; 
+    color: white;
+    padding: 10px;
+    font-size: xxx-large;
+    background-color: rgba(119, 110, 161, 0.212);
+}
+
+.hero h2 {
+    font-size: x-large;
+}
+
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+/* Header Styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: linear-gradient(135deg, #34ee56, #82e79f);
+    /* Farm-inspired green gradient */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Section */
+
+
+header img {
+    height: 100px;
+    width: auto;
+}
+
+
+
+/* Navigation Styling */
+.header_nav {
+    flex-grow: 1; /* Allows the navigation to take up remaining space */
+    display: flex;
+    justify-content: space-evenly; /* Evenly spaces out the nav items */
+    align-items: center; /* Centers nav items vertically */
+}
+
+.header_nav ul {
+    display: flex;
+    gap: 20px; /* Adds spacing between list items */
+    list-style-type: none;
+    padding: 0;
+}
+
+.header_nav a {
+    text-decoration: none;
+    color: #fbfdfc;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.header_nav a:hover {
+    color: #264e21;
+}
+
+
+
+
+footer {
+    display: flex;
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
+    padding: 20px;
+    background: #264e21; /* A dark green for footer background */
+    color: #fbfdfc; /* Light text for contrast */
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px; 
+    padding: 0;
+    margin: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fbfdfc;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+footer img{
+    width: 20px;
+}
+
+
+footer a:hover {
+    color: #82e79f; 
+}
+
+.hero-text {
+    font-weight: bold;
+}
+
+.part2 {
+    opacity: 0;
+    animation: showText 3s 2s forwards; /* Show text after delay */
+}
+
+.part1 {
+    animation: showTextFirst 3s forwards;
+}
+
+.hero-text{
+    position: absolute;
+    top: 400px;
+    text-align: center; 
+    color: white;
+    padding: 10px;
+    font-size: x-large;
+}
+
+@keyframes showTextFirst {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes showText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
