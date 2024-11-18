@@ -1,4 +1,4 @@
-/* General Reset */
+
 body,
 h1,
 ul,
@@ -38,14 +38,13 @@ body {
     height: auto;
   }
 
-/* Header Styling */
+
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 50px;
     background: linear-gradient(135deg, #34ee56, #82e79f);
-    /* Farm-inspired green gradient */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -94,7 +93,8 @@ footer {
     justify-content: center; /* Centers items horizontally */
     padding: 20px;
     background: #264e21; /* A dark green for footer background */
-    color: #fbfdfc; /* Light text for contrast */
+    color: #fbfdfc; 
+    gap: 20px;
 }
 
 footer ul {
